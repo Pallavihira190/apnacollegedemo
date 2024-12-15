@@ -1,0 +1,56 @@
+PS C:\Users\Nisha\Desktop\project practice> git clone https://github.com/nishapanday8/apnacollegedemo.git
+
+PS C:\Users\Nisha\Desktop\project practice> cd apnacollegedemo
+PS C:\Users\Nisha\Desktop\project practice\apnacollegedemo> git branch
+* main
+
+PS C:\Users\Nisha\Desktop\project practice\apnacollegedemo> git branch feature 
+
+PS C:\Users\Nisha\Desktop\project practice\apnacollegedemo> git checkout feature
+Switched to branch 'feature'
+
+PS C:\Users\Nisha\Desktop\project practice\apnacollegedemo> git add .
+
+PS C:\Users\Nisha\Desktop\project practice\apnacollegedemo> git merge main
+Already up to date.
+
+PS C:\Users\Nisha\Desktop\project practice\apnacollegedemo> git add .
+
+PS C:\Users\Nisha\Desktop\project practice\apnacollegedemo> git commit -m "create login page"
+[feature c7e9336] create login page
+ 1 file changed, 26 insertions(+)
+ create mode 100644 login.html
+
+PS C:\Users\Nisha\Desktop\project practice\apnacollegedemo> git status
+On branch feature
+nothing to commit, working tree clean
+
+PS C:\Users\Nisha\Desktop\project practice\apnacollegedemo> git log 
+commit c7e9336ab701e54a77cce9b58c265b90c9ed5ec9 (HEAD -> feature)
+Author: nishapanday8 <nishapanday818@gmail.com>
+Date:   Sat Dec 14 12:36:30 2024 +0530
+
+    create login page
+
+commit 26db0143a11e455b8ca0e2fd562e19715efc8f18 (origin/main, origin/HEAD, main)
+Author: Pallavihira190 <164606297+Pallavihira190@users.noreply.github.com>
+Date:   Mon Nov 25 19:36:53 2024 +0530
+
+    Update README.md
+PS C:\Users\Nisha\Desktop\project practice\apnacollegedemo> git merge main
+Already up to date.
+
+PS C:\Users\Nisha\Desktop\project practice\apnacollegedemo> git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 682 bytes | 341.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/nishapanday8/apnacollegedemo/pull/new/feature
+remote:
+
+To https://github.com/nishapanday8/apnacollegedemo.git
+ * [new branch]      feature -> feature
